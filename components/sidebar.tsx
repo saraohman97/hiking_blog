@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { BsMoon } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 import { PiDotsThreeOutlineVerticalThin } from "react-icons/pi";
