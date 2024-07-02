@@ -143,9 +143,50 @@ export default function packningPage() {
         i min väska för energi och sockersug. <br /> <br />
         Det går dock absolute att skaffa ett ultralätt kök på vandringen. Här är
         några av mina favoriter:
-        <br />
-        Biler här
       </p>
+      <div className="grid grid-cols-3 gap-2 my-6">
+        <div className="border border-stone-400 rounded-xl p-4">
+          <Image
+            src="/pack/gas.jpg"
+            alt=""
+            width={500}
+            height={500}
+            className="aspect-square"
+          />
+          <div>
+            Spis <br />
+            <span>25g</span>
+          </div>
+        </div>
+
+        <div className="border border-stone-400 rounded-xl p-4">
+          <Image
+            src="/pack/kastrull.jpg"
+            alt=""
+            width={500}
+            height={500}
+            className="aspect-square"
+          />
+          <div>
+            Kastrull <br />
+            <span>75g</span>
+          </div>
+        </div>
+
+        <div className="border border-stone-400 rounded-xl p-4">
+          <Image
+            src="/pack/sked.jpg"
+            alt=""
+            width={500}
+            height={500}
+            className="aspect-square"
+          />
+          <div>
+            Sked <br />
+            <span>15g</span>
+          </div>
+        </div>
+      </div>
 
       <p className="font-bold">Vikt</p>
       <div className="border rounded p-2 sm:p-10">

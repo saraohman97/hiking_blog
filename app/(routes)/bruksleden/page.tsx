@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CiMapPin } from "react-icons/ci";
 
-const Posts = () => {
+const BruksledenPage = () => {
   return (
     <div className="w-full pr-10">
       <div>
@@ -72,4 +72,4 @@ const Posts = () => {
   );
 };
 
-export default Posts;
+export default BruksledenPage;

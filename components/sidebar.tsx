@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { BsMoon } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 import DropDown from "./dropdown";
 import toast from "react-hot-toast";
