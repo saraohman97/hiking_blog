@@ -6,10 +6,13 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
   const slides = [
     {
-      url: "/image2.jpg",
+      url: "/hero1.jpg",
     },
     {
-      url: "/berg.jpg",
+      url: "/hero2.jpg",
+    },
+    {
+      url: "/hero3.jpg",
     },
   ];
 
@@ -25,7 +28,6 @@ const Navbar = () => {
 
   return (
     <div className="h-[500px] w-full relative">
-      {/* <Image alt="" src="/image2.jpg" fill className="object-cover" /> */}
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="bg-cover duration-500 w-full h-[500px] bg-center"
@@ -37,7 +39,7 @@ const Navbar = () => {
       </div>
       <a
         href="https://github.com/saraohman97"
-        className="absolute flex gap-2 items-center p-4 right-0 cursor-pointer hover:underline underline-offset-4 text-white"
+        className="absolute flex gap-2 items-center p-4 right-0 top-0 cursor-pointer hover:underline underline-offset-4 text-white"
       >
         Av Sara Öhman <BsGithub />
       </a>
@@ -55,9 +57,9 @@ const Navbar = () => {
           }`}
         />
         <div
-          onClick={() => setCurrentIndex(0)}
+          onClick={() => setCurrentIndex(2)}
           className={`border-b-4 w-10 hover:border-gray-400 cursor-pointer ${
-            currentIndex === 3 ? "border-gray-400" : "border-gray-300"
+            currentIndex === 2 ? "border-gray-400" : "border-gray-300"
           }`}
         />
       </div>

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             <Sidebar />
           </div>
         </div>
+        <Toaster position="bottom-right" reverseOrder={false} />
       </body>
     </html>
   );

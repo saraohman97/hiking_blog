@@ -1,31 +1,30 @@
+"use client";
+
 import Link from "next/link";
 import { BsMoon } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
-import { PiDotsThreeOutlineVerticalThin } from "react-icons/pi";
+import DropDown from "./dropdown";
+import toast from "react-hot-toast";
 
 const Sidebar = () => {
+  const copy = () => {
+    navigator.clipboard.writeText("saraohman97@gmail.com");
+    toast.success('Kopierade "saraohman97@gmail.com".', {
+      icon: "👏",
+    });
+  };
+
   return (
     <div className="w-96 max-sm:hidden ml-10 flex flex-col">
       <div className="flex justify-end">
-        <div className="rounded hover:bg-green-50 hover:text-green-600 cursor-pointer h-8 w-8 flex items-center justify-center mb-4 text-gray-600">
-          <BsMoon size={18} />
-        </div>
-
-        <div className="rounded hover:bg-green-50 hover:text-green-600 cursor-pointer h-8 w-8 flex items-center justify-center mb-4">
+        <div
+          onClick={copy}
+          className="rounded hover:bg-green-50 hover:text-green-600 cursor-pointer h-8 w-8 flex items-center justify-center mb-4"
+        >
           <CiMail size={20} />
         </div>
-
-        <div className="rounded hover:bg-green-50 hover:text-green-600 cursor-pointer h-8 w-8 flex items-center justify-center mb-4">
-          <PiDotsThreeOutlineVerticalThin size={20} />
-        </div>
+        <DropDown />
       </div>
-
-      {/* <div className="border-l-4 p-2 hover:bg-green-50 cursor-pointer hover:border-green-600">
-        Bruksleden
-      </div>
-      <div className="border-l-4 p-2 hover:bg-green-50 cursor-pointer hover:border-green-600">
-        Roslagsleden
-      </div> */}
 
       <Link
         href="/ultralatt_packning"
