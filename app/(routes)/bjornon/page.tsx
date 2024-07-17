@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function BjornonPage() {
   return (
     <div className="w-full">
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         <small>12 juni, 2024</small>
         <div>/</div>
         <small>Västerås</small>
