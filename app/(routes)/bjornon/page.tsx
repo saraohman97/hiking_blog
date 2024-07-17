@@ -32,7 +32,7 @@ export default function BjornonPage() {
         href="https://www.naturkartan.se/sv/vastmanlands-lan/bjornon-2"
         className="underline underline-offset-4 text-sm hover:text-green-700"
       >
-        Karta {"-->"}
+        Naturkartan {"-->"}
       </a>
 
       <div className="grid grid-cols-2 gap-2 mt-6">
@@ -66,7 +66,7 @@ export default function BjornonPage() {
         />
       </div>
 
-      <Pagination leftName="Ultralätt packning" leftLink="ultralatt_packning" />
+      <Pagination leftName="Ultralätt packning" leftLink="ultralatt_packning" rightName="Roslagsleden etapp 11" rightLink="roslagsleden-etapp-11" />
     </div>
   );
 }

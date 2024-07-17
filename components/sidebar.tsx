@@ -38,6 +38,13 @@ const Sidebar = () => {
       >
         Björnön
       </Link>
+
+      <Link
+        href="/roslagsleden-etapp-11"
+        className="border-l-4 p-2 hover:bg-green-50 cursor-pointer hover:border-green-600"
+      >
+        Roslagsleden Etapp 11
+      </Link>
     </div>
   );
 };
